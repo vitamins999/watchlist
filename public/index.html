@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/f2cabb9741.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WatchList | Where to watch movies on your icheckmovies list</title>
+</head>
+
+<body>
+    <div class="section transparent is-paddingless">
+        <div class="section bg_landing">
+
+            <div class="container transparent">
+                <div class="hero-head transparent">
+
+                    <nav class="navbar transparent">
+                        <div class="navbar-brand shadowless">
+                            <i class="fas fa-film fa-3x has-text-white"></i>
+                            <a href="#" class="navbar-item">
+                                <h1 class="title has-text-white">WatchList</h1>
+                            </a>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="hero is-fullheight bg_landing">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <div class="header__search" id="header__search">
+                            <h2 class="subtitle has-text-white">
+                                Find out what
+                                <a href="https://www.icheckmovies.com" class="link">icheckmovies.com</a>
+                                checklist films are available to
+                                stream on Netflix and Amazon Prime right now
+                            </h2>
+                            <form id="search__form">
+                                <div class="field has-addons">
+                                    <span class="select">
+                                        <select name="region" id="region">
+                                            <option value="en_AU">Australia</option>
+                                            <option value="en_CA">Canada</option>
+                                            <option value="fr_FR">France</option>
+                                            <option value="de_DE">Germany</option>
+                                            <option value="it_IT">Italy</option>
+                                            <option value="es_ES">Spain</option>
+                                            <option value="en_GB" selected=true>United Kingdom</option>
+                                            <option value="en_US">United States</option>
+                                        </select>
+                                    </span>
+                                    <input id="search__checklist" class="input header__search-checklist searchbox"
+                                        type="text"
+                                        title="Please enter a valid icheckmovies url (e.g. https://www.icheckmovies.com/lists/imdbs+top+250/)"
+                                        placeholder="Enter icheckmovies list url..." name="searchChecklist" required
+                                        pattern="^(?:(?:https?|HTTPS?|ftp|FTP):\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-zA-Z\u00a1-\uffff0-9]-*)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]-*)*[a-zA-Z\u00a1-\uffff0-9]+)*)(?::\d{2,})?(?:[\/?#]\S*)?$">
+                                </div>
+                                <button id="search__submit"
+                                    class="button is-primary has-text-black header__search-btn btn">What
+                                    can I
+                                    stream?</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section id="section__search__results" class="search__results section is-paddingless">
+        <div id="container-results">
+            <div class="search__results-listname has-text-centered"></div>
+            <div class="columns is-centered">
+                <div id="table-div" class="column is-narrow has-text-centered">
+                    <!-- <table class="table is-striped">
+                        <tbody id="table-body">
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-text-centered is-paddingless">
+        <div id="footer" class="footer__copyright">
+            <p class="is-5 has-text-black">&copy; Copyright 2020</p>
+            <p class="is-5 has-text-black">All rights reserved</p>
+        </div>
+    </footer>
+    <script src="scripts/bundle.js"></script>
+</body>
+
+</html>

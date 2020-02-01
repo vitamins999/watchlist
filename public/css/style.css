@@ -1,0 +1,59 @@
+.transparent {
+    background-color: transparent !important;
+}
+
+* {
+    box-shadow: none !important;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.section.bg_landing {
+    background: url('../img/header-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    background-color: rgb(87, 105, 105, 0.75) !important;
+    background-blend-mode: overlay !important;
+}
+
+/* .search__results-listname {
+    margin-bottom: 2rem;
+} */
+
+.search__results-netflix {
+    color: #E50914;
+}
+
+.search__results-amazon {
+    color:#FF9900;
+}
+
+#end-message-div {
+    margin-bottom: 2rem;
+}
+
+#list-title-div {
+    margin-bottom: 2rem;
+}
+
+#footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#loading-bar-div {
+    width: 15rem;
+    position: fixed;
+    top: 90%;
+    left: 80%;
+}
+
+#search__submit {
+    margin-top: 1rem;
+}
